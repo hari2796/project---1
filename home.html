@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coffee Shop Gallery</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+    header {
+      background-color: #8B4513;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-size: 18px;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      background-image: url('coffee-shop.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    }
+    .hero h1 {
+      font-size: 50px;
+      
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+    .card {
+      background-color: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 16px;
+    }
+    .card-content h3 {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Coffee House</div>
+    <div class="buttons">
+               </div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="About_us.html">About Us</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <marquee bgcolor="lightblue"><h1>Welcome to Coffee House</h1></marquee>
+  </section>
+
+  <section class="gallery" id="gallery">
+    <div class="card">
+      <img src="https://imgs.search.brave.com/Wm4xSlRrDXG9U-u4950m2lol6IDe6I8_E-NH6JkSzzA/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9j/L2M4L0NhcHB1Y2Np/bm9fYXRfU2lnaHRn/bGFzc19Db2ZmZWUu/anBn" alt="Espresso">
+      <div class="card-content">
+        <h3>Espresso</h3>
+        <p>A concentrated coffee brewed by forcing hot water through finely-ground coffee beans. It's the foundation for many other coffee drinks.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://imgs.search.brave.com/E4r3fS4uxmD72V6SKUI2SmFb1Maedta4R9pzyRs9xP0/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly93d3cu/c3BvdG9uLmNvbS9i/bG9nL2NvbnRlbnQv/aW1hZ2VzLzIwMjQv/MDQvZXNwcmVzc28t/c2hvdC1jb2ZmZWUt/MS5qcGVn" alt="Americano">
+      <div class="card-content">
+        <h3>Americano</h3>
+        <p>A shot of espresso diluted with hot water, resulting in a coffee similar in strength to drip coffee but with a distinct flavor.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://imgs.search.brave.com/fGDqoq0uVCR6cr4xhxLyaQSGEjXa4duHrB4MrWO0ihM/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi9kL2Q4L0Nh/ZmZlX0xhdHRlX2F0/X1B1bHNlX0NhZmUu/anBnLzUxMnB4LUNh/ZmZlX0xhdHRlX2F0/X1B1bHNlX0NhZmUu/anBn" alt="Latte">
+      <div class="card-content">
+        <h3>Latte</h3>
+        <p>A blend of espresso and steamed milk, topped with a small amount of milk foam. It's creamy and smooth.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://imgs.search.brave.com/HMaHVpoU6afioi6UQSTrsY7iSxuGZSBXbMWCewWIY-U/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi83LzcwL0Nh/cHB1Y2Npbm9faW5f/b3JpZ2luYWwuanBn/LzUxMnB4LUNhcHB1/Y2Npbm9faW5fb3Jp/Z2luYWwuanBn" alt="Cappuccino">
+      <div class="card-content">
+        <h3>Cappuccino</h3>
+        <p>Equal parts of espresso, steamed milk, and milk foam. Often topped with a sprinkle of cocoa powder or cinnamon.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://imgs.search.brave.com/7nAQTA_FIk44kJYuLHxuCzMn1fT_1vJaKzIzGU_r_o8/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi9mL2ZjL01h/Y2NoaWF0b18lMjg3/MTk5MzY2NTMwJTI5/LmpwZy81MTJweC1N/YWNjaGlhdG9fJTI4/NzE5OTM2NjUzMCUy/OS5qcGc" alt="Macchiato">
+      <div class="card-content">
+        <h3>Macchiato</h3>
+        <p>An espresso "stained" with a small amount of steamed milk or milk foam. It's stronger than a latte.</p>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
